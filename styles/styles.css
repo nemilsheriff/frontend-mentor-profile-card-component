@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+body main {
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  height: 100vh;
+  background-color: hsl(185deg, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .container {
+  background-color: white;
+  border-radius: 10px;
+}
+body main .container .image-header img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main .container .name-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main .container .name-card .name-age #name {
+  font-weight: 700;
+}
+body main .container .name-card .name-age #age {
+  color: hsl(0deg, 0%, 59%);
+}
+body main .container .name-card .location {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-top: 0.25rem;
+  padding-bottom: 1.5rem;
+}
+body main .container .name-card .name-card-image #profile {
+  border-radius: 5rem;
+  outline: white 5px solid;
+  margin-top: -3.25rem;
+  margin-bottom: 1.5rem;
+}
+body main .container .line {
+  background-color: hsl(0deg, 0%, 59%);
+  height: 1px;
+}
+body main .container .socials {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+body main .container .socials .count {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 0.25rem;
+}
+body main .container .socials .unit {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: hsl(0deg, 0%, 59%);
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

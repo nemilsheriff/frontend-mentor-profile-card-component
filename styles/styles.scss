@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    main {
+        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
+        height: 100vh;
+        background-color: $dark-cyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+
+            .image-header {
+                img {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+            }
+
+            .name-card {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .name-age {
+                    #name {
+                        font-weight: 700;
+                    }
+
+                    #age {
+                        color: $dark-gray;
+                    }
+                }
+
+                .location {
+                    color: $dark-gray;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    padding-top: 0.25rem;
+                    padding-bottom: 1.5rem;
+                }
+
+                .name-card-image {
+                    #profile {
+                        border-radius: 5rem;
+                        outline: white 5px solid;
+                        margin-top: -3.25rem;
+                        margin-bottom: 1.5rem;
+
+                    }
+                }
+            }
+
+            .line {
+                background-color: $dark-gray;
+                height: 1px;
+            }
+
+            .socials {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+
+                .count {
+                    font-weight: 700;
+                    text-align: center;
+                    padding-bottom: 0.25rem;
+                }
+
+                .unit {
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    color: $dark-gray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
